@@ -1,0 +1,3 @@
+function testFlights(){
+    alert("cioa");
+}

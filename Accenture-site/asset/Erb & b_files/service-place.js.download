@@ -1,0 +1,3 @@
+function testPlace(){
+    alert("cioa");
+}

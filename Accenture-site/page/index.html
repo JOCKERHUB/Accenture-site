@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Accenture-site/style/style.css" />
+    <script src="/Accenture-site/js/service-hotels.js"></script>
+    <script src="/Accenture-site/js/service-resturants.js"></script>
+    <script src="/Accenture-site/js/service-place.js"></script>
+    <script src="/Accenture-site/js/service-flights.js"></script>
+    <script>
+      window.addEventListener("load", getHotels(), false);
+    </script>
+    <title>Erb & b</title>
+  </head>
+  <body>
+    <!-- INIZIO NAVBAR -->
+    <div class="sidenav"></div>
+    <div class="container">
+      <div class="topav">
+        <a href="#" onclick="getHotels()" HOTELS>HOTELS</a>
+        <a href="#" onclick="getRestaurant()" RESTAURANT>RESTAURANT</a>
+        <a href="#" onclick="testFlights()" FLIGHTS>FLIGHTS</a>
+        <a href="#" onclick="test()" PLACE>PLACE</a>
+      </div>
+      <!-- FINE NAVBAR -->
+      <!-- INIZIO BLOCCHI -->
+      <div class="content">
+        <div class="inner-container-list">
+          <div class="inner-container-list-search">
+            <input type="text" class="input-search" id="input-search" />
+          </div>
+          <div id="inner_container_list">
+            <div id="inner_container_list_item">
+              <div class="inner_container_list_item"></div>
+            </div>
+          </div>
+        </div>
+        <div id="inner_container_detail" style="display: none;">
+          <div class="box-detail">
+            <div class="box-detail-header" id="box-detail-header">
+              <a href="#" onclick="goback()"
+                ><img
+                  src="/Accenture-site/asset/left-arrow.png"
+                  alt="arrow"
+                  width="30"
+                  class="img-detail-goback"
+              /></a>
+              <span class="box-detail-title" id="box-detail-title"></span>
+            </div>
+            <div class="box-detail-body" id="box-detail-body"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FINE BLOCCHI -->
+  </body>
+</html>
+
+
+
