@@ -68,7 +68,7 @@ function printHotels(hotels) {
     firstrow += '<div class="column-right">';
 
     for (var k = 0; k < hotels[i].stars; k++) {
-      firstrow += ' <img src="/Accenture -site/asset/star.png" alt="star">';
+      firstrow += ' <img src="/Accenture-site/asset/star.png" alt="star">';
     }
     firstrow += "</div>";
     firstrow += "</div>";
