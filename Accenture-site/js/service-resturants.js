@@ -277,8 +277,7 @@ function viewResturant(id){
   dettaglio_body += getDetailBox('Website<br>', './Img/website.png', resturant.website, 'green');
   dettaglio_body += '</div>';
   dettaglio_body += '<div>';
-  dettaglio_body += '<address style="text-align: left;">Address:<br>';
-  dettaglio_body += ''+ resturant.address.streetAddress+', ' + resturant.address.city+', '+ resturant.address.country+' , '+ resturant.address.zipCode+ '</address>';
+  dettaglio_body += getDetailBox('Address<br>','./Img/address.png',)
   dettaglio_body += '</div>';
 
   document.getElementById("box-detail-title").innerHTML = dettaglio_titolo;
