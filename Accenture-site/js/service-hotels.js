@@ -45,7 +45,7 @@ function getHotels(){
 //concatenazione degli attributi degli hotel
 function printHotels(hotels) {
   document.getElementById("inner_container_list_item").innerHTML = ""; ///
-  document.getElementById("inner_container_list").style.disply = "block";
+  document.getElementById("inner_container_list").style.display = "block";
   for (i = 0; i < hotels.length; i++) {
     var box_preview = document.createElement("div");
     box_preview.className = "box-preview";
