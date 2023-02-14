@@ -101,9 +101,9 @@ function viewFlight(id){
 
   /** Aggiungo i box **/
 
-  dettaglio_body += getDetailBox('Departure<br>', './Img/telefono.png', departure.date, 'orange');
-  dettaglio_body += getDetailBox('Arrival<br>', './Img/posta.png', arrival.date, 'red');
-  dettaglio_body += getDetailBox('Price<br>', './Img/website.png', price, 'green');
+  dettaglio_body += getDetailBox('Departure<br>', './Img/telefono.png', flight.departure.date, 'orange');
+  dettaglio_body += getDetailBox('Arrival<br>', './Img/posta.png', flight.arrival.date, 'red');
+  dettaglio_body += getDetailBox('Price<br>', './Img/website.png', flight.price, 'green');
   dettaglio_body += '</div>';
   dettaglio_body += '<div>';
   dettaglio_body += '<address style="text-align: left;">Address:';    
