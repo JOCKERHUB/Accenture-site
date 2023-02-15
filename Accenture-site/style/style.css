@@ -1,6 +1,6 @@
 body {
 
-    background-color: #f8f0fb;
+    background-color: blue;
 
 }
 
@@ -104,7 +104,7 @@ body {
 
 .box-preview-footer {
     text-align: center;
-    background-color: blue;
+    background-color: purple;
     width: 15vh;
     height: 5vh;
     display: flex;

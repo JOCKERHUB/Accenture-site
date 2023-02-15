@@ -1,0 +1,5 @@
+$colorbody:#297373;
+
+@mixin body{
+    background-color: $colorbody;
+}

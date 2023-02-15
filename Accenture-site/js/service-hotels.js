@@ -17,7 +17,7 @@ function getHotels(){
       var filtro = null;
 
       document.getElementById("input-search").addEventListener("keyup",function(){
-        var pattern = this.value;  
+        var pattern = this.value;   
         if(pattern){
           filtro = hotels.filter(function(francesco){
             return francesco.name.indexOf(pattern)!='-1'
