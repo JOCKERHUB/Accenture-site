@@ -32,7 +32,7 @@ function getHotels(){
       });
     }
   }
-  // PORTO SOTTO
+  // PORTO SOTTO                
   request.open("get", url, true);
   request.send();
 }
