@@ -219,7 +219,7 @@ function printResturants(restaurants){
       box_preview_header_title.innerHTML = restaurants[i].name;
       box_preview_header.appendChild(box_preview_header_title);
 
-      var firstrow = '<hr style="margin-left:10px;margin-right:10px"><div class="row">';
+      var firstrow = '<hr "><div class="row">';
       firstrow += '<div class="coloum-left"><p>PHONE</p>' + restaurants[i].phone +'</div>';
       firstrow += '<div class="coloum-right"></div>';
       firstrow += '</div>';

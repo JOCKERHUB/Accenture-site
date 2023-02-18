@@ -62,9 +62,9 @@ function printHotels(hotels) {
     box_preview_header_title.innerHTML = hotels[i].name;
     box_preview_header.appendChild(box_preview_header_title);
 
-    var firstrow = '<div class="row">';
+    var firstrow = '<hr><div class="row">';
     firstrow +=
-      '<div class="column-left"><p>phone</p>' + hotels[i].phone + "</div>";
+      '<div class="column-left"><p>PHONE</p>' + hotels[i].phone + "</div>";
     firstrow += '<div class="column-right">';
 
     for (var k = 0; k < hotels[i].stars; k++) {
@@ -74,17 +74,17 @@ function printHotels(hotels) {
     firstrow += "</div>";
 
     var secondrow = '<div class="row">';
+    secondrow += '<div class="column-right"><p>EMAIL</p> </div>';
     secondrow += '<div class="column-left">' + hotels[i].email + "</div>";
-    secondrow += '<div class="column-right"><p>email</p> </div>';
     secondrow += "</div>";
 
     var thirdrow = '<div class="row">';
+    thirdrow += '<div class="column-right"><p>VIA</p> </div>';
     thirdrow +=
       '<div class="column-left">' +
       hotels[i].address.streetAddress +
       hotels[i].zipCode +
       "</div>";
-    thirdrow += '<div class="column-right"><p>via</p> </div>';
     thirdrow += "</div>";
 
     box_preview_body.insertAdjacentHTML("afterbegin", thirdrow);
@@ -123,7 +123,7 @@ function viewHotel(id) {
 
   for (i = 0; i < hotels.length; i++) if (hotels[i].id == id) hotel = hotels[i];
 
-  dettaglio_titolo += "<div>" + hotel.name + " ";
+  dettaglio_titolo += "<div class='titolo-viewmore'>" + hotel.name + " ";
 
   for (k = 0; k < hotel.stars; k++) {
     dettaglio_titolo += '<img src="/Accenture-site/asset/star.png" class="star" alt=""/>';
@@ -135,36 +135,36 @@ function viewHotel(id) {
 
   document.getElementById("inner_container_detail").style.display = "block";
 
-  dettaglio_body += "<div>" + hotel.longDescription + "</div>";
+  dettaglio_body += "<div class='lungadescrizione'>" + hotel.longDescription + "</div>";
 
   dettaglio_body += '<div class="box-container">';
 
   /** Aggiungo i box **/
 
   dettaglio_body += getHtmlDetailBox(
-    "Number of rooms",
-    "assets/img/room.png",
+    "Number of rooms ",
+    '<img src="/Accenture-site/asset/bed.png"/>',
     hotel.rooms,
     "yellow"
-  );
-
+    );
+  
   dettaglio_body += getHtmlDetailBox(
     "Phone",
-    "assets/img/phone.png",
+    '<img src="/Accenture-site/asset/telephone.png"/>',
     hotel.phone,
     "orange"
   );
 
   dettaglio_body += getHtmlDetailBox(
     "Email",
-    "assets/img/email.png",
+    '<img src="/Accenture-site/asset/bed.png"/>',
     hotel.email,
     "red"
   );
 
   dettaglio_body += getHtmlDetailBox(
     "Website",
-    "assets/img/web.png",
+    '<img src="/Accenture-site/asset/bed.png"/>',
     hotel.website,
     "green"
   );
@@ -195,7 +195,7 @@ function viewHotel(id) {
 function getHtmlDetailBox(title,img,info,color){
      codice=""
      codice+= '<div class="hotel_detail_box" style="background:' + color + '">';
-     codice+='<p> <strong>' + title + '</strong>' + '<img src = "">' + img + 'class="stars"'; 
+     codice+='<p> <strong>' + title + '</strong>' + '<img src = "">' + img; 
      codice+='<strong>' + info + '</strong>' + '</p>' + '</div>';
      return codice;
 }

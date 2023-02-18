@@ -48,7 +48,7 @@ function getPlace(){
         box_preview_header_title.innerHTML = places[i].name;
         box_preview_header.appendChild(box_preview_header_title);
   
-        var firstrow = '<hr style="margin-left:10px;margin-right:10px"><div class="row">';
+        var firstrow = '<hr ><div class="row">';
         firstrow += '<div class="coloum-left"><p>Country</p>' + places[i].country + '</div>';
         firstrow += '<div class="coloum-right"></div>';
         firstrow += '</div>';
