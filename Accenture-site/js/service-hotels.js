@@ -143,48 +143,33 @@ function viewHotel(id) {
 
   dettaglio_body += getHtmlDetailBox(
     "Number of rooms ",
-    '<img src="/Accenture-site/asset/bed.png"/>',
+    '<img src="/Accenture-site/asset/bed.png"/><br>',
     hotel.rooms,
-    "yellow"
+    "white"
     );
   
   dettaglio_body += getHtmlDetailBox(
     "Phone",
     '<img src="/Accenture-site/asset/telephone.png"/>',
     hotel.phone,
-    "orange"
+    "white"
   );
 
   dettaglio_body += getHtmlDetailBox(
-    "Email",
-    '<img src="/Accenture-site/asset/bed.png"/>',
+    "Email<br>",
+    '<img src="/Accenture-site/asset/mail.png"/>',
     hotel.email,
-    "red"
+    "white"
   );
 
   dettaglio_body += getHtmlDetailBox(
-    "Website",
-    '<img src="/Accenture-site/asset/bed.png"/>',
+    "Website<br>",
+    '<img src="/Accenture-site/asset/internet.png"/>',
     hotel.website,
-    "green"
+    "white"
   );
 
-  dettaglio_body += "</div>";
-
-  dettaglio_body += "<div>";
-
-  dettaglio_body += "<address>Address:<br>";
-
-  dettaglio_body +=
-    "" +
-    hotel.address.streetAddress +
-    ", " +
-    hotel.address.city +
-    ", " +
-    hotel.address.country +
-    " - " +
-    hotel.address.zipCode +
-    "</address>";
+ 
 
   dettaglio_body += "</div>";
 
